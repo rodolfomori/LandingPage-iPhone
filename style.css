@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,88 +6,99 @@
     text-decoration: none;
     font-family: sans-serif;
 }
-body{
-    background: #e8e6e7;
+
+body {
+    background: #ffffff;
 }
-header{
-    padding: 20px 70px;
-    background: #1d1d1f;
+
+header {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    height: 50px;
+    border-bottom: 1px solid #d3d3d3;
 }
-.navigation{
+
+ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
-.navigation .logo{
-    width: 50px;
+
+li a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.8;
 }
-.navigation ul{
-    display: flex;
-    align-items: center;
-    gap: 60px;
+
+.logo {
+    height: 20px;
 }
-.navigation ul li a{
-    color: #888;
-    font-weight: 600;
-    padding-bottom: 4px;
-    transition: all 0.5s ease-in-out;
-}
-.navigation ul li a:hover{
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-.navigation .check{
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
+
 
 /*Main*/
 
-main section{
+main section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 10rem;
+    padding: 30px 50px;
 }
-.main-text img{
-    width: 15rem;
-    margin-bottom: 3vh;
+
+.main-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
-.main-text h3{
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
+
+.main-text h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
-.main-text p{
-    margin-bottom: 1.5rem;
+
+.main-text p {
+    margin-bottom: 10px;
 }
-.main-text h6{
-    color: #999;
-    font-size: 1rem;
-    margin-bottom: 2rem;
+
+.main-text h6 {
+    color: #626262;
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight:300 ;
 }
-.main-text .btn{
-    padding: 10px 25px;
+
+.main-text button {
+    padding: 10px 20px;
     background: #0071e3;
     border-radius: 20px;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 20px;
     transition: all 0.5s;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
-.main-text .btn:hover{
+
+.main-text button:hover {
     opacity: .85;
 }
-.main-text .text h5{
+
+.main-text  h5 {
     font-size: 1rem;
     color: #444;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 20px 0;
 }
-.main-text .content {
+
+.content {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.main-text .content span{
+
+.main-text .content span {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -95,41 +106,47 @@ main section{
     box-shadow: 1px 1px #888;
     transition: all 0.5s;
 }
-.main-text .content span:hover{
+
+.main-text .content span:hover {
     opacity: .80;
 }
-#green{
-    background: #384937;
+
+#azul {
+    background: #81A5C4;
 }
-#pink{
-    background: #f8ddd6;
+
+#amarelo {
+    background: #F7DA47;
 }
-#blue{
-    background: #225f7e;
+
+#branco {
+    background: #C1C1C1;
 }
-#black{
-    background: #192028;
+
+#preto {
+    background: #272D33;
 }
-#white{
-    background: #f7f2ee;
+
+#vermelho {
+    background: #B50012;
 }
-#red{
-    background: #ae0617;
+
+#roxo {
+    background: #EDE7F1;
 }
-.main-img{
-    transition: all 1s ease;
-    z-index: 100;
-}
-.main-img img{
+
+.img-iphone {
     width: 500px;
-    transform: rotate(-7deg);
+    z-index: 99999;
+    margin-top: 100px;
 }
-.circle{
+
+.circle {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #445c42;
-    clip-path: circle(800px at right 1000px);
+    background: #81A5C4;
+    clip-path: circle(600px at right 1000px);
 }
